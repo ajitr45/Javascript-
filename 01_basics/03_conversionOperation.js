@@ -1,64 +1,67 @@
-let score = "Himanshu"
+// ******** Type Conversion ********
 
-// console.log(typeof score)
-// console.log(typeof (score))
+let score = "Himanshu"
+console.log("score:", score, "| type:", typeof score)
 
 let valueInNumber = Number(score)
-// console.log(typeof valueInNumber);
-// console.log(valueInNumber);
-
-
-// "33" => 33
-//"33abc" => NaN
-// true => 1; false => 0
+console.log("valueInNumber:", valueInNumber, "| type:", typeof valueInNumber)
+// "Himanshu" => NaN (type is still number)
 
 let isLoggedIn = "Himanshu"
-
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-// console.log(booleanIsLoggedIn);
-
-// 1 => true; 0 => false 
-// "" => false 
-// "himnashu" => true
+console.log("booleanIsLoggedIn:", booleanIsLoggedIn)
+// Non-empty string => true
 
 let someNumber = 33
-
 let stringNumber = String(someNumber)
-// console.log(stringNumber)
-// console.log(typeof stringNumber);
-// console.log(someNumber);
+console.log("stringNumber:", stringNumber, "| type:", typeof stringNumber)
+// 33 => "33" (string)
 
 
-// ***************** Operations *************
+// ******** Operations ********
 
 let value = 3
 let negValue = -value
-// console.log(negValue);
+console.log("negValue:", negValue)
 
-// console.log(2+2);
-// console.log(2-2);
-// console.log(2*2);
-// console.log(2**5);
-// console.log(2/2);
-// console.log(3%2);
-
-str1 = "Hello"
-str2 =" Ajit"
-
-str3 = str1 + str2
-// console.log(str3)
-
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+console.log("2+2 =", 2 + 2)
+console.log("2-2 =", 2 - 2)
+console.log("2*2 =", 2 * 2)
+console.log("2**5 =", 2 ** 5) // exponentiation
+console.log("2/2 =", 2 / 2)
+console.log("3%2 =", 3 % 2)   // remainder
 
 
-// console.log(+true)
-// console.log(+"")
+// ******** String Concatenation ********
 
+let str1 = "Hello"
+let str2 = " Ajit"
+let str3 = str1 + str2
+console.log("Concatenated:", str3)
+
+console.log('"1" + 2 =', "1" + 2) 
+console.log('1 + "2" =', 1 + "2")
+console.log('"1" + "2" =', "1" + "2")
+console.log('"1" + 2 + 2 =', "1" + 2 + 2) 
+console.log('1 + 2 + "2" =', 1 + 2 + "2")
+
+
+// ******** Unary Plus ********
+
+console.log("+true =", +true)   // 1
+console.log('+"" =', +"")       // 0
+
+
+// ******** Increment Operator ********
 
 let gameCounter = 100
-gameCounter++
-console.log(gameCounter);
+console.log("Before post-increment (gameCounter):", gameCounter)
+
+console.log("Using gameCounter++ (returns old value):", gameCounter++)
+
+console.log("After post-increment (gameCounter):", gameCounter)
+
+let anotherCounter = 100
+console.log("Before pre-increment (++anotherCounter):", anotherCounter)
+console.log("Using ++anotherCounter (returns new value):", ++anotherCounter)
+console.log("After pre-increment (anotherCounter):", anotherCounter)
