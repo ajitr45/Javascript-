@@ -60,3 +60,4 @@ console.log("B ", myArr)  // original array remains same
 const myn2 = myArr.splice(1, 3)
 console.log("C ", myArr)  // original array modified
 console.log(myn2)         // removed elements
+ 
