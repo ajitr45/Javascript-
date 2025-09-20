@@ -1,5 +1,5 @@
 // ==========================
-//  Object Creation
+// Object Creation
 // ==========================
 
 // const tinderUser = new Object()  // singleton way
@@ -34,8 +34,8 @@ console.log(regularUser.fullname.userfullname)
 const obj1 = { 1: "a", 2: "b" }
 const obj2 = { 3: "a", 4: "b" }
 
-//  Wrong way: const obj3 = {obj1, obj2}
-//  Way 1: Object.assign()
+// Wrong way: const obj3 = {obj1, obj2}
+// Way 1: Object.assign()
 // const obj3 = Object.assign({}, obj1, obj2)
 
 // Way 2: Spread Operator
@@ -65,25 +65,26 @@ console.log(users[1].email)  // accessing 2nd user's email
 
 
 // ==========================
-// Object Utilities
+//  Object Utilities
 // ==========================
 console.log(tinderUser)                   // complete object
 console.log(Object.keys(tinderUser))      // all keys
 console.log(Object.values(tinderUser))    // all values
 console.log(Object.entries(tinderUser))   // [key, value] pairs
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"))  
+console.log(tinderUser.hasOwnProperty("isLoggedIn"))
 
 
-
+// ==========================
+//  Object Destructuring
+// ==========================
 const course = {
     coursename: "Js in hindi",
     price: "999",
-    courseInstructor:"Hitesh"
+    courseInstructor: "Hitesh"
 }
 
-// course.courseinstructor
+//  Destructuring with alias
+const { courseInstructor: Instructor } = course 
 
-const {courseInstructor:Instructor} = course 
-
-console.log(Instructor);
+console.log(Instructor)  
