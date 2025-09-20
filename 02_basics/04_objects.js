@@ -1,5 +1,5 @@
 // ==========================
-// Object Creation
+//  Object Creation
 // ==========================
 
 // const tinderUser = new Object()  // singleton way
